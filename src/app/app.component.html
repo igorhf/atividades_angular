@@ -1,0 +1,23 @@
+<div style="text-align:center">
+  <h1>
+    {{ title }}!
+  </h1>
+</div>
+<div style="margin-left: 35%">
+  <div style="float:left">
+    <form>
+      <p>Informer o numero do cartão </p>
+      <p><input (keyup)="logoCC(cartao.value)" #cartao ></p><img width="60" height="50" src="assets/img/{{img}}">
+    </form>
+  </div>
+  <div style="float:left">
+    <ol>
+      <p>Bandeira disponivel</p>
+      <li><span style="color: red">master</span>, numeração inicial 5</li>
+      <li><span style="color: red">visa</span>, numeração inicial 4</li>
+      <li><span style="color: red">american express</span>, numeração inicial 37</li>
+    </ol>
+  </div>
+</div>
+
+<router-outlet></router-outlet>
